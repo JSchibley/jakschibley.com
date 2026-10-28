@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Making Keyboard Circuit Boards at Home - Jak Schibley</title>
+    <meta name="description" content="James and I are making custom keyboard circuit boards at home with KiCad, pcb2gcode, and a Genmitsu Cubiko desktop CNC." />
+    <link rel="canonical" href="https://jakschibley.com/projects/keyboard-circuit-boards/" />
+    <style>
+      body { font-family: sans-serif; padding: 40px; max-width: 850px; line-height: 1.5; }
+      h2 { margin-top: 32px; }
+      a { overflow-wrap: anywhere; }
+      @media (max-width: 600px) { body { padding: 20px; } }
+    </style>
+  </head>
+  <body>
+<header style="margin-bottom: 40px;">
+  <div style="display: flex; align-items: center; gap: 16px;">
+    <img src="/jakrabbit.jpeg" alt="Rabbit" style="height: 60px;" />
+
+    <div>
+      <div style="font-size: 24px; font-weight: bold;">
+        Jak Schibley
+      </div>
+      <div style="font-size: 14px; color: #555;">
+        jakschibley.com
+      </div>
+    </div>
+  </div>
+  <hr style="margin: 16px 0; border: none; border-top: 1px solid #ddd;" />
+  <nav style="margin-top: 16px;">
+        <a href="/" style="margin-right: 16px;">Home</a>
+        <a href="/about/" style="margin-right: 16px;">About</a>
+        <a href="/projects/">Projects</a>
+  </nav>
+</header>
+    <main>
+      <h1>Making Keyboard Circuit Boards at Home</h1>
+      <p>
+        James and I have been making custom gaming keyboards with circuit boards milled on a small desktop CNC. The question behind the project is simple: can we make the boards at home and keep the development flow going?
+      </p>
+
+      <figure style="margin: 28px 0;">
+        <img src="/images/keyboard-pcb-milling.jpeg" width="1152" height="1536"
+          alt="A desktop CNC drilling a keyboard circuit board, with copper traces visible and the board held in a pink fixture."
+          style="display: block; width: 100%; max-width: 600px; height: auto;" />
+        <figcaption style="margin-top: 8px; font-size: 14px; color: #555;">
+          Making a keyboard circuit board on the desktop CNC, with the copper traces taking shape.
+        </figcaption>
+      </figure>
+
+      <h2>From printed traces back to copper</h2>
+      <p>
+        The conductive-filament controllers from our <a href="/projects/fighting-game-controller/">fighting game controller project</a> worked well for reading keys. But we couldn’t get I2C signals, used for communication between components, through the printed traces to drive status screens or build split keyboards.
+      </p>
+      <p>
+        So we came back to copper. A printed circuit board, or PCB, starts here as a copper-clad board. The CNC removes just enough copper to electrically separate the traces, leaving the connections the circuit needs.
+      </p>
+
+      <h2>From design to board</h2>
+      <p>
+        James designs the boards in KiCad. We use pcb2gcode to turn those designs into toolpaths for a Genmitsu Cubiko desktop CNC. The machine then mills the traces, drills the component holes, and cuts out the board.
+      </p>
+      <p>
+        That gives us a physical board to examine and improve, with the design and manufacturing steps happening at home.
+      </p>
+
+      <h2>What we’re learning</h2>
+      <p>
+        The idea is straightforward. Getting consistently good results has given us plenty to work through:
+      </p>
+      <ul>
+        <li><strong>Keeping the board flat.</strong> We’re cutting through a thin copper layer, so small differences in surface height matter.</li>
+        <li><strong>Balancing depth, feed rate, and bit size.</strong> We’ve had copper burrs, fragile little islands, and a broken bit along the way.</li>
+        <li><strong>Designing for our process.</strong> Trace widths, clearances, and component pads need to work with our cutters and with assembly at home.</li>
+      </ul>
+      <p>
+        Each iteration mixes changes to the board design, changes to the toolpaths, and a close look at what the machine actually cut. A design can look reasonable on a screen and still leave a tiny strip of copper where we don’t want one.
+      </p>
+
+      <h2>Still in progress</h2>
+      <p>
+        We’re still tuning the milling process. As with the <a href="/projects/ebird-database/">eBird database</a> and conductive-filament projects, the appeal is shortening the distance between an idea and useful feedback. Every board gives us something concrete to examine and improve.
+      </p>
+      <p style="margin-top: 32px;"><a href="/projects/">Back to projects</a></p>
+    </main>
+  </body>
+</html>
