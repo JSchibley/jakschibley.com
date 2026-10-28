@@ -1,100 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projects - Jak Schibley</title>
-    <meta
-      name="description"
-      content="Projects by Jak Schibley, including hardware, software, keyboards, 3D printing, data visualization, and systems work."
-    />
-  </head>
-  <body style="font-family: sans-serif; padding: 40px; max-width: 850px; line-height: 1.5;">
-
-<header style="margin-bottom: 40px;">
-  <div style="display: flex; align-items: center; gap: 16px;">
-    <img src="/jakrabbit.jpeg" alt="Rabbit" style="height: 60px;" />
-
-    <div>
-      <div style="font-size: 24px; font-weight: bold;">
-        Jak Schibley
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Jak Schibley</title>
+  <meta name="description" content="Hardware, software, research systems, and things made with family." />
+  <link rel="canonical" href="https://jakschibley.com/projects/" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="Jak Schibley home">
+    <img src="/jakrabbit.jpeg" alt="" width="60" height="60" />
+    <span>Jak Schibley<small>Systems, tools &amp; projects</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="nav-link" href="/">Home</a>
+    <div class="nav-branch">
+      <div class="nav-parent">
+        <a class="nav-link" href="/projects/" aria-current="page">Projects</a>
+        <button class="menu-toggle" type="button" aria-label="Toggle project menu" aria-expanded="true" aria-controls="project-menu"><span aria-hidden="true"></span></button>
       </div>
-      <div style="font-size: 14px; color: #555;">
-        jakschibley.com
-      </div>
+      <ul class="project-menu" id="project-menu">
+        <li><a href="/projects/fighting-game-controller/">3D Printed Fighting Game Controller</a></li>
+        <li><a href="/projects/ebird-database/">eBird Research Database</a></li>
+        <li><a href="/projects/keyboard-circuit-boards/">Making Keyboard Circuit Boards at Home</a></li>
+      </ul>
+    </div>
+    <a class="nav-link" href="/about/">About</a>
+  </nav>
+  <p class="sidebar-note">Manomet, Massachusetts</p>
+</aside>
+    <div class="content">
+      <main id="main">
+<div class="page-intro"><p class="eyebrow">Making &amp; learning</p><h1>Projects</h1><p class="lead">A few things I’ve built or am building, often with my family.</p><p>Some are tools, some are experiments, and some are things I wanted to understand better by making them.</p></div>
+<section class="image-list" aria-label="Project directory"><article class="image-entry">
+  <a class="image-entry-link" href="/projects/fighting-game-controller/">
+    <div class="entry-photo"><img src="/images/fight-control-keyboard.jpeg" width="1600" height="1200" alt="The assembled black fighting game controller with James’s custom button layout." /></div>
+    <h2>3D Printed Fighting Game Controller<span aria-hidden="true"> ↗</span></h2>
+  </a>
+  <p>A custom layout, conductive filament, and a controller James and I built together.</p>
+</article>
+<article class="image-entry">
+  <a class="image-entry-link" href="/projects/ebird-database/">
+    <div class="entry-photo"><img src="/images/ebird-cluster.jpg" width="800" height="600" alt="The eBird cluster with custom racks, status lights, and a central mini PC." loading="lazy" /></div>
+    <h2>eBird Research Database<span aria-hidden="true"> ↗</span></h2>
+  </a>
+  <p>Repurposed laptop mainboards and a distributed database for Lisa’s bird research.</p>
+</article>
+<article class="image-entry">
+  <a class="image-entry-link" href="/projects/keyboard-circuit-boards/">
+    <div class="entry-photo"><img src="/images/split-keyboard-current.jpeg" width="1448" height="1086" alt="Our current split keyboard, with two black key assemblies joined by a cable." loading="lazy" /></div>
+    <h2>Making Keyboard Circuit Boards at Home<span aria-hidden="true"> ↗</span></h2>
+  </a>
+  <p>From KiCad designs to copper traces milled on a desktop CNC.</p>
+</article></section>
+<section class="coming-next"><h2>Coming next</h2><ul><li>701c-style keyboard laptop case</li><li>ISS / eBird map display system</li></ul></section>
+      </main>
+<footer class="site-footer"><p>Jak Schibley · Manomet, Massachusetts</p><p><a href="https://www.linkedin.com/in/jak-schibley-6053451">LinkedIn</a> · <a href="https://github.com/JSchibley">GitHub</a></p></footer>
     </div>
   </div>
-  <hr style="margin: 16px 0; border: none; border-top: 1px solid #ddd;" />
-  <nav style="margin-top: 16px;">
-        <a href="/" style="margin-right: 16px;">Home</a>
-        <a href="/about/" style="margin-right: 16px;">About</a>
-        <a href="/projects/">Projects</a>
-  </nav>
-</header>
-
-    <h1>Projects</h1>
-
-    <p>
-      A few things I’ve built or am building, often with my family.
-    </p>
-
-    <p>
-      These are not all finished products. Some are experiments, some are tools, and some are just things I wanted to understand better by making them.
-    </p>
-
-    <section style="margin-top: 32px;">
-      <h2><a href="/projects/fighting-game-controller/">3D Printed Fighting Game Controller</a></h2>
-
-      <p>
-        A 3D printed fighting game controller James and I built together. It uses an RP2040 Pico running GP2040-CE, with Choc 1350 hot-swap sockets so the switches can be changed.
-      </p>
-
-      <p>
-        The key layout and spacing are entirely James’s design.
-      </p>
-
-      <p>
-        <a href="/projects/fighting-game-controller/">Read more</a>
-      </p>
-    </section>
-
-    <hr style="margin: 32px 0; border: none; border-top: 1px solid #ddd;" />
-
-    <section>
-      <h2><a href="/projects/ebird-database/">eBird Research Database</a></h2>
-
-      <p>
-        An analysis system for Lisa’s research, working with more than 2.2 billion eBird observation records. Parquet and DuckDB handle data preparation, while four repurposed Framework laptop mainboards form a PostgreSQL/Citus cluster for distributed storage and analysis.
-      </p>
-
-      <p>
-        Custom 3D-printed racks bring the hardware, networking, and status monitoring together.
-      </p>
-
-      <p>
-        <a href="/projects/ebird-database/">Read more</a>
-      </p>
-    </section>
-
-    <hr style="margin: 32px 0; border: none; border-top: 1px solid #ddd;" />
-
-    <section>
-      <h2><a href="/projects/keyboard-circuit-boards/">Making Keyboard Circuit Boards at Home</a></h2>
-      <p>
-        James and I are making custom keyboard circuit boards with a desktop CNC. James designs the boards in KiCad, then we mill the copper traces, drill the holes, and cut out the boards at home.
-      </p>
-      <p><a href="/projects/keyboard-circuit-boards/">Read more</a></p>
-    </section>
-
-    <hr style="margin: 32px 0; border: none; border-top: 1px solid #ddd;" />
-
-    <section>
-      <h2>Coming next</h2>
-
-      <ul>
-        <li>701c-style keyboard laptop case</li>
-        <li>ISS / eBird map display system</li>
-      </ul>
-    </section>
-  </body>
+</body>
 </html>

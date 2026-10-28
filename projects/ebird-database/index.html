@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>eBird Research Database - Jak Schibley</title>
-    <meta name="description" content="An eBird analysis system for Lisa’s research, built with DuckDB, Parquet, PostgreSQL/Citus, and four repurposed Framework laptop mainboards." />
-    <style>
-      body { font-family: sans-serif; padding: 40px; max-width: 850px; line-height: 1.5; }
-      h2 { margin-top: 32px; }
-      a { overflow-wrap: anywhere; }
-      .facts { display: flex; flex-wrap: wrap; gap: 24px 40px; padding: 20px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin: 28px 0; }
-      .facts div { flex: 1 1 160px; }
-      .facts dt { font-size: 24px; font-weight: bold; }
-      .facts dd { margin: 4px 0 0; color: #555; }
-      @media (max-width: 600px) { body { padding: 20px; } }
-    </style>
-    <style>
-      .project-progress { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 28px 0; }
-      .project-progress figure { margin: 0; min-width: 0; }
-      .project-progress img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #f5f5f5; }
-      .project-progress figcaption { margin-top: 10px; color: #555; font-size: 14px; }
-      .project-progress strong { display: block; color: #222; font-size: 18px; margin-bottom: 4px; }
-      @media (max-width: 640px) {
-        .project-progress { grid-template-columns: 1fr; }
-        body { padding: 20px !important; }
-      }
-    </style>
-  </head>
-  <body>
-    <header style="margin-bottom: 40px;">
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <img src="/jakrabbit.jpeg" alt="Rabbit" style="height: 60px;" />
-        <div>
-          <div style="font-size: 24px; font-weight: bold;">Jak Schibley</div>
-          <div style="font-size: 14px; color: #555;">jakschibley.com</div>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>eBird Research Database - Jak Schibley</title>
+  <meta name="description" content="An eBird analysis system for Lisa’s research, built with DuckDB, Parquet, PostgreSQL/Citus, and four repurposed Framework laptop mainboards." />
+  <link rel="canonical" href="https://jakschibley.com/projects/ebird-database/" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="Jak Schibley home">
+    <img src="/jakrabbit.jpeg" alt="" width="60" height="60" />
+    <span>Jak Schibley<small>Systems, tools &amp; projects</small></span>
+  </a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="nav-link" href="/">Home</a>
+    <div class="nav-branch">
+      <div class="nav-parent">
+        <a class="nav-link" href="/projects/">Projects</a>
+        <button class="menu-toggle" type="button" aria-label="Toggle project menu" aria-expanded="true" aria-controls="project-menu"><span aria-hidden="true"></span></button>
       </div>
-      <hr style="margin: 16px 0; border: none; border-top: 1px solid #ddd;" />
-      <nav aria-label="Main navigation" style="margin-top: 16px;">
-        <a href="/" style="margin-right: 16px;">Home</a>
-        <a href="/about/" style="margin-right: 16px;">About</a>
-        <a href="/projects/">Projects</a>
-      </nav>
-    </header>
-
-    <main>
+      <ul class="project-menu" id="project-menu">
+        <li><a href="/projects/fighting-game-controller/">3D Printed Fighting Game Controller</a></li>
+        <li><a href="/projects/ebird-database/" aria-current="page">eBird Research Database</a></li>
+        <li><a href="/projects/keyboard-circuit-boards/">Making Keyboard Circuit Boards at Home</a></li>
+      </ul>
+    </div>
+    <a class="nav-link" href="/about/">About</a>
+  </nav>
+  <p class="sidebar-note">Manomet, Massachusetts</p>
+</aside>
+    <div class="content">
+      <main id="main">
+<p class="breadcrumb"><a href="/projects/">Projects</a> / eBird Research Database</p>
       <h1>eBird Research Database</h1>
       <p>
         I’m building an eBird analysis system for Lisa’s research. The goal is to combine eBird observations with other large research datasets on a platform fast enough to keep the research moving.
@@ -106,6 +98,10 @@
         <a href="https://www.linkedin.com/posts/jak-schibley-6053451_closing-in-on-a-year-of-retirement-i-thought-activity-7507066545421090816-qpA6">Read the original eBird project post on LinkedIn</a>.
       </p>
       <p style="margin-top: 32px;"><a href="/projects/">Back to projects</a></p>
-    </main>
-  </body>
+    
+      </main>
+<footer class="site-footer"><p>Jak Schibley · Manomet, Massachusetts</p><p><a href="https://www.linkedin.com/in/jak-schibley-6053451">LinkedIn</a> · <a href="https://github.com/JSchibley">GitHub</a></p></footer>
+    </div>
+  </div>
+</body>
 </html>
