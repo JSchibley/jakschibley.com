@@ -117,3 +117,15 @@ li { margin-bottom:8px; }
 .polaroid-6 { left:35%; top:57%; transform:rotate(-6deg); z-index:5; }
 .polaroid-7 { left:34%; top:29%; transform:rotate(-7deg); z-index:3; }
 .about-collage { margin:0 0 30px; width:90%; }
+
+/* Keep all site photos in the About collage as projects are added. */
+.polaroid { width:26%; padding:1.2% 1.2% 4.8%; }
+.polaroid-1 { left:6%; top:4%; transform:rotate(-10deg); z-index:1; }
+.polaroid-2 { left:36%; top:3%; transform:rotate(6deg); z-index:2; }
+.polaroid-3 { left:67%; top:5%; transform:rotate(11deg); z-index:1; }
+.polaroid-4 { left:5%; top:34%; transform:rotate(5deg); z-index:3; }
+.polaroid-5 { left:67%; top:34%; transform:rotate(-9deg); z-index:3; }
+.polaroid-6 { left:37%; top:62%; transform:rotate(-5deg); z-index:6; }
+.polaroid-7 { left:36%; top:33%; transform:rotate(-6deg); z-index:4; }
+.polaroid-8 { left:6%; top:63%; transform:rotate(8deg); z-index:5; }
+.polaroid-9 { left:68%; top:62%; transform:rotate(6deg); z-index:5; }
