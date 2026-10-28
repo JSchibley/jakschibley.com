@@ -12,6 +12,17 @@
       a { overflow-wrap: anywhere; }
       @media (max-width: 600px) { body { padding: 20px; } }
     </style>
+    <style>
+      .project-progress { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 28px 0; }
+      .project-progress figure { margin: 0; min-width: 0; }
+      .project-progress img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #f5f5f5; }
+      .project-progress figcaption { margin-top: 10px; color: #555; font-size: 14px; }
+      .project-progress strong { display: block; color: #222; font-size: 18px; margin-bottom: 4px; }
+      @media (max-width: 640px) {
+        .project-progress { grid-template-columns: 1fr; }
+        body { padding: 20px !important; }
+      }
+    </style>
   </head>
   <body>
 <header style="margin-bottom: 40px;">
@@ -40,14 +51,20 @@
         James and I have been making custom gaming keyboards with circuit boards milled on a small desktop CNC. The question behind the project is simple: can we make the boards at home and keep the development flow going?
       </p>
 
-      <figure style="margin: 28px 0;">
-        <img src="/images/keyboard-pcb-milling.jpeg" width="1152" height="1536"
-          alt="A desktop CNC drilling a keyboard circuit board, with copper traces visible and the board held in a pink fixture."
-          style="display: block; width: 100%; max-width: 600px; height: auto;" />
-        <figcaption style="margin-top: 8px; font-size: 14px; color: #555;">
-          Making a keyboard circuit board on the desktop CNC, with the copper traces taking shape.
-        </figcaption>
-      </figure>
+      <section class="project-progress" aria-label="How the project has developed">
+        <figure>
+          <a href="/images/keyboard-pcb-milling.jpeg" aria-label="View full photo: how it started">
+            <img src="/images/keyboard-pcb-milling.jpeg" width="1152" height="1536" alt="A desktop CNC working on a copper keyboard circuit board held in a pink fixture." />
+          </a>
+          <figcaption><strong>How it started</strong>Making the circuit boards at home, one milling pass and drill hole at a time.</figcaption>
+        </figure>
+        <figure>
+          <a href="/images/split-keyboard-current.jpeg" aria-label="View full photo: where it is now">
+            <img src="/images/split-keyboard-current.jpeg" width="1448" height="1086" alt="The current split keyboard with two black key assemblies, exposed microcontrollers, and a cable joining the halves." />
+          </a>
+          <figcaption><strong>Where it is now</strong>Our current split keyboard, with the two halves assembled and connected.</figcaption>
+        </figure>
+      </section>
 
       <h2>From printed traces back to copper</h2>
       <p>
