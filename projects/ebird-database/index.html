@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>eBird Research Database - Jak Schibley</title>
+    <meta name="description" content="An eBird analysis system for Lisa’s research, built with DuckDB, Parquet, PostgreSQL/Citus, and four repurposed Framework laptop mainboards." />
+    <style>
+      body { font-family: sans-serif; padding: 40px; max-width: 850px; line-height: 1.5; }
+      h2 { margin-top: 32px; }
+      a { overflow-wrap: anywhere; }
+      .facts { display: flex; flex-wrap: wrap; gap: 24px 40px; padding: 20px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin: 28px 0; }
+      .facts div { flex: 1 1 160px; }
+      .facts dt { font-size: 24px; font-weight: bold; }
+      .facts dd { margin: 4px 0 0; color: #555; }
+      @media (max-width: 600px) { body { padding: 20px; } }
+    </style>
+  </head>
+  <body>
+    <header style="margin-bottom: 40px;">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <img src="/jakrabbit.jpeg" alt="Rabbit" style="height: 60px;" />
+        <div>
+          <div style="font-size: 24px; font-weight: bold;">Jak Schibley</div>
+          <div style="font-size: 14px; color: #555;">jakschibley.com</div>
+        </div>
+      </div>
+      <hr style="margin: 16px 0; border: none; border-top: 1px solid #ddd;" />
+      <nav aria-label="Main navigation" style="margin-top: 16px;">
+        <a href="/" style="margin-right: 16px;">Home</a>
+        <a href="/about/" style="margin-right: 16px;">About</a>
+        <a href="/projects/">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>eBird Research Database</h1>
+      <p>
+        I’m building an eBird analysis system for Lisa’s research. The goal is to combine eBird observations with other large research datasets on a platform fast enough to keep the research moving.
+      </p>
+      <p>
+        This is one of the projects keeping me busy in retirement. It brings together columnar storage, distributed databases, repurposed hardware, and some custom 3D printing.
+      </p>
+
+      <dl class="facts" aria-label="Project scale at the time of the original post">
+        <div><dt>2.2+ billion</dt><dd>observation records</dd></div>
+        <div><dt>Nearly 0.9 TB</dt><dd>of raw tabular data</dd></div>
+        <div><dt>4 worker nodes</dt><dd>repurposed Framework mainboards</dd></div>
+      </dl>
+      <p style="font-size: 14px; color: #555;">Dataset figures reflect the eBird Basic Dataset described in my original post.</p>
+
+      <h2>Keeping the research in flow</h2>
+      <p>
+        The challenge is more than storing a large dataset. Lisa needs to work with the records alongside other research data, and the system needs to support that back-and-forth without long waits breaking her concentration. That research workflow is what the rest of the design serves.
+      </p>
+
+      <h2>Preparing the data</h2>
+      <p>
+        A central mini PC handles preprocessing with Parquet and DuckDB. It compares eBird’s monthly bulk releases, creates change sets, and reconciles those changes with the active database. The same machine also serves as the R server for day-to-day research.
+      </p>
+
+      <h2>Distributing the database</h2>
+      <p>
+        Four repurposed Framework laptop mainboards form a PostgreSQL/Citus cluster for distributed storage and interactive analysis. The central machine handles data preparation; the cluster provides the distributed database used for analysis.
+      </p>
+      <p>
+        Within the database, checklists and observations are stored separately to reduce duplication and improve query performance. An eBird DB-compatible view makes that structure available to existing data-cleaning and research libraries.
+      </p>
+
+      <h2>Building the physical system</h2>
+      <p>
+        Custom 3D-printed racks hold the four worker nodes, networking, and Raspberry Pi Zeros with status lights for monitoring. Each laptop mainboard exposes HDMI and USB at the front, so I can connect a lapdock for direct access when needed.
+      </p>
+      <p>
+        It’s a smaller collection of machines than I used to worry over, but a fun way to stay involved with analytics and distributed systems while building something useful for Lisa.
+      </p>
+
+      <h2>Original post</h2>
+      <p>
+        <a href="https://www.linkedin.com/posts/jak-schibley-6053451_closing-in-on-a-year-of-retirement-i-thought-activity-7507066545421090816-qpA6">Read the original eBird project post on LinkedIn</a>.
+      </p>
+      <p style="margin-top: 32px;"><a href="/projects/">Back to projects</a></p>
+    </main>
+  </body>
+</html>
