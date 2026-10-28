@@ -103,7 +103,7 @@ li { margin-bottom:8px; }
 }
 
 /* Smaller Home slideshow images and an About photo collage. */
-.home-slideshow .slide-photo { width:90%; }
+.home-slideshow .slide-photo { width:76.5%; }
 .home-slideshow .slide-photo-about { background:#f1eee7; display:block; }
 .slide-photo-about > .polaroid-scatter { width:100%; height:100%; }
 .polaroid-scatter { position:relative; width:100%; aspect-ratio:4 / 3; overflow:hidden; background:radial-gradient(ellipse at center,#f8f6ef,#e8e3d8); isolation:isolate; }
