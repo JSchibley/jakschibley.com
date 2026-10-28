@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Jak Schibley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jak Schibley - Systems, Tools, and Projects</title>
+    <meta name="description" content="Projects and notes from Jak Schibley in Manomet, Massachusetts: custom controllers, home-milled keyboard circuit boards, and an eBird research database." />
+    <link rel="canonical" href="https://jakschibley.com/" />
+    <style>
+      body { font-family: sans-serif; padding: 40px; max-width: 850px; line-height: 1.5; color: #222; }
+      h1 { font-size: clamp(28px, 5vw, 38px); line-height: 1.2; margin-bottom: 20px; }
+      .intro { max-width: 720px; font-size: 18px; }
+      .section-title { margin: 40px 0 8px; }
+      .project { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 24px; align-items: center; padding: 24px 0; border-bottom: 1px solid #ddd; }
+      .project h3 { margin: 0 0 8px; font-size: 21px; line-height: 1.3; }
+      .project p { margin: 8px 0; }
+      .project img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #f5f5f5; }
+      .background { margin-top: 40px; max-width: 720px; }
+      footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 14px; }
+      a { overflow-wrap: anywhere; }
+      @media (max-width: 600px) {
+        body { padding: 20px; }
+        .project { grid-template-columns: 1fr; gap: 16px; }
+        .project img { max-width: 400px; }
+      }
+    </style>
   </head>
-  <body style="font-family: sans-serif; padding: 40px;">
-
+  <body>
 <header style="margin-bottom: 40px;">
   <div style="display: flex; align-items: center; gap: 16px;">
     <img src="/jakrabbit.jpeg" alt="Rabbit" style="height: 60px;" />
@@ -20,18 +40,69 @@
     </div>
   </div>
   <hr style="margin: 16px 0; border: none; border-top: 1px solid #ddd;" />
-  <nav style="margin-top: 16px;">
-        <a href="/" style="margin-right: 16px;">Home</a>
+  <nav aria-label="Main navigation" style="margin-top: 16px;">
+        <a href="/" aria-current="page" style="margin-right: 16px;">Home</a>
         <a href="/about/" style="margin-right: 16px;">About</a>
         <a href="/projects/">Projects</a>
   </nav>
 </header>
-    <p>Based in Manomet, Massachusetts (Greater Boston area). I’ve spent most of my career working on large-scale infrastructure systems, including building and operating systems at Google.</p>
-    <p>I build systems and tools, often with my family.</p>
-    <p>More to come.</p>
-    <p>
-  <a href="https://www.linkedin.com/in/jak-schibley-6053451">LinkedIn</a> ·
-  <a href="https://github.com/JSchibley">GitHub</a>
-</p>
+
+    <main>
+      <h1>I build systems and tools.</h1>
+      <div class="intro">
+        <p>I’m Jak Schibley, based in Manomet, Massachusetts. After a career building and operating large-scale infrastructure, including at Google, I’m retired and still making things.</p>
+        <p>These days that includes controllers and keyboards with my son James, and a database for my wife Lisa’s bird research. Software, electronics, and physical design tend to end up in the same project.</p>
+      </div>
+
+      <section aria-labelledby="projects-heading">
+        <h2 class="section-title" id="projects-heading">What I’m building</h2>
+        <p>Some useful tools, some experiments, and plenty of revisions along the way.</p>
+
+        <article class="project">
+          <a href="/projects/fighting-game-controller/" aria-label="Read about the 3D Printed Fighting Game Controller">
+            <img src="/images/fight-control-keyboard.jpeg" width="1600" height="1200" alt="Our black 3D-printed fighting game controller with its custom button layout." />
+          </a>
+          <div>
+            <h3><a href="/projects/fighting-game-controller/">3D Printed Fighting Game Controller</a></h3>
+            <p>A controller James and I built around his custom layout, with conductive filament carrying the connections through the printed structure.</p>
+            <p><a href="/projects/fighting-game-controller/">See the build</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <a href="/projects/ebird-database/" aria-label="Read about the eBird Research Database">
+            <img src="/images/ebird-cluster.jpg" width="800" height="600" alt="The eBird research cluster with custom racks, status lights, and a central mini PC." loading="lazy" />
+          </a>
+          <div>
+            <h3><a href="/projects/ebird-database/">eBird Research Database</a></h3>
+            <p>Repurposed laptop mainboards, a distributed database, and more than two billion bird observation records, built to keep Lisa’s research moving.</p>
+            <p><a href="/projects/ebird-database/">Explore the system</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <a href="/projects/keyboard-circuit-boards/" aria-label="Read about Making Keyboard Circuit Boards at Home">
+            <img src="/images/split-keyboard-current.jpeg" width="1448" height="1086" alt="Our current split keyboard, with two black key assemblies connected by a cable." loading="lazy" />
+          </a>
+          <div>
+            <h3><a href="/projects/keyboard-circuit-boards/">Making Keyboard Circuit Boards at Home</a></h3>
+            <p>From James’s board designs to copper traces cut on a desktop CNC, we’re learning how to make our own keyboard circuit boards at home.</p>
+            <p><a href="/projects/keyboard-circuit-boards/">Follow the process</a></p>
+          </div>
+        </article>
+        <p><a href="/projects/">Visit the projects page</a> for the builds and what’s coming next.</p>
+      </section>
+
+      <section class="background" aria-labelledby="background-heading">
+        <h2 id="background-heading">A little background</h2>
+        <p>My work has ranged from consulting and public television analytics to Writely’s early infrastructure and systems at Google. A recurring part of the job was helping people understand complicated systems and keep them working.</p>
+        <p><a href="/about/">More about my background</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/jak-schibley-6053451">LinkedIn</a> ·
+      <a href="https://github.com/JSchibley">GitHub</a>
+    </footer>
   </body>
 </html>
